@@ -1,0 +1,238 @@
+{
+  "intents": {
+    "sampleGetWeather": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "What's the weather like today in LA"
+            },
+            {
+              "text": "los angeles",
+              "entity": "location",
+              "slot_name": "weatherLocation"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "this weekend",
+              "entity": "ruthai/datetime",
+              "slot_name": "weatherDate"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "What kind of weather should I expect "
+            },
+            {
+              "text": "today",
+              "entity": "ruthai/datetime",
+              "slot_name": "weatherDate"
+            },
+            {
+              "text": " in "
+            },
+            {
+              "text": "Orlando",
+              "entity": "location",
+              "slot_name": "weatherLocation"
+            },
+            {
+              "text": " ? "
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Will it be sunny in "
+            },
+            {
+              "text": "Miami",
+              "entity": "location",
+              "slot_name": "weatherLocation"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "at the end of the day",
+              "entity": "ruthai/datetime",
+              "slot_name": "weatherDate"
+            },
+            {
+              "text": " ?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "What will be the weather in "
+            },
+            {
+              "text": "London",
+              "entity": "location",
+              "slot_name": "weatherLocation"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "tomorrow morning",
+              "entity": "ruthai/datetime",
+              "slot_name": "weatherDate"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "is it going to rain? "
+            },
+            {
+              "text": "this afternoon",
+              "entity": "ruthai/datetime",
+              "slot_name": "weatherDate"
+            },
+            {
+              "text": " in "
+            },
+            {
+              "text": "tel aviv",
+              "entity": "location",
+              "slot_name": "weatherLocation"
+            },
+            {
+              "text": ", please"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "What is the weather in "
+            },
+            {
+              "text": "New York",
+              "entity": "location",
+              "slot_name": "weatherLocation"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        }
+      ]
+    },
+    "sampleTurnOnLight": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "The "
+            },
+            {
+              "text": "bedroom",
+              "entity": "room",
+              "slot_name": "room"
+            },
+            {
+              "text": " is dark, please turn on the light !"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Can you enlight the "
+            },
+            {
+              "text": "living room",
+              "entity": "room",
+              "slot_name": "room"
+            },
+            {
+              "text": " ?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "can you turn on the light "
+            },
+            {
+              "text": "basement",
+              "entity": "room",
+              "slot_name": "room"
+            },
+            {
+              "text": " please"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Please turn all the lights in the "
+            },
+            {
+              "text": "bathroom",
+              "entity": "room",
+              "slot_name": "room"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Turn on the lights in the "
+            },
+            {
+              "text": "kitchen",
+              "entity": "room",
+              "slot_name": "room"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "entities": {
+    "location": {
+      "data": [],
+      "use_synonyms": true,
+      "automatically_extensible": true,
+      "matching_strictness": 1.0
+    },
+    "ruthai/datetime": {},
+    "room": {
+      "data": [
+        {
+          "value": "basement",
+          "synonyms": [
+            "cellar"
+          ]
+        },
+        {
+          "value": "living room",
+          "synonyms": [
+            "lounge",
+            "family room"
+          ]
+        }
+      ],
+      "use_synonyms": true,
+      "automatically_extensible": false,
+      "matching_strictness": 1.0
+    }
+  },
+  "language": "en"
+}
